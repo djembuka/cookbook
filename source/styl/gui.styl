@@ -1,0 +1,45 @@
+body
+  background #fff
+  
+#cookbook
+  width 80%
+  margin 0 auto
+  
+.b-recipe
+  rel()
+  width 300px
+  border-radius( 10px )
+  box-shadow( 0 0 8px rgba(0,0,0,0.15) )
+  overflow hidden
+  margin 0 10px 10px 0
+  float left
+  
+  &__ill
+    width 100%
+    height auto
+    display block
+    
+  &__cover
+    position absolute
+    bottom -2px
+    left 0
+    width 100%
+    height 90%
+    transition( all 0.5s ease-out )
+    overflow hidden
+    border-top 2px solid #fff
+    background #999
+    
+    &-ill
+      position absolute
+      bottom -1px
+      left -1%
+      width 102%
+      height auto
+      filterBlur( 5px )
+      display block
+      opacity( 0.96 )
+      
+    .b-recipe:hover &
+      height 0
+      bottom -2px
